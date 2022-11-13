@@ -25,14 +25,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    a. ".map" acts on each element of an array and then pushes that information into a new array which it returns.
+    b. ".reduce" 'reduces' the data of an array down into one value, for example an array of data about cities being reduced to the total population of those cities. 
+    c. ".filter" returns a new array that includes ONLY the elements of the original array that meet the requirements for being added (i.e. if(requirement === true)).
 
 2. Explain the difference between a callback and a higher order function.
+    A callback is a function that will be passed into another function. A higher order function uses other functions (callback functions) in its code. For example, a higher order function could be "calculator," which takes a callback function for which operation to do, such as "add()" "subtract()" "multiply()" etc. 
 
 3. Explain what a closure is.
+    A closure is like what is inside the { }. A function creates a closure. Then anything inside the function can access what is within the function as well as what is outside of it but within its scope (e.g. not within another function or scope)
 
 4. Describe the four principles of the 'this' keyword.
+    a. window binding: If "this" is invoked while not within the scope of a specific object/constructor/etc, then "this" will refer to the most general level of the code, i.e. the window or console.
+    b. internal binding: When an object function directly uses the "this" keyword, for example "console.log(`${this.key}`)
+    c. external binding: When an object function is indirectly accessed using a function like ".call" or ".apply", which will use "this." For example "console.log(obj1.function1.call(obj2))"
+    d. new binding: When an object is created with the "new" keyword, it will use a constructor that uses "this" to assign values to keys. 
 
 5. Why do we need super() in an extended class?
+    Certain keys belong to the parent class, so the values given to the extended class need to be attached to the keys of the parent class rather than the child class. super() allows the parent values to be used in the creation of the child object.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
